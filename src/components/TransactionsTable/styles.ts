@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const Content = styled.section`
   width: 100%;
 
+  p {
+    color: var(--text-body);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
   table {
     width: 100%;
     border-spacing: 0 0.5rem;
