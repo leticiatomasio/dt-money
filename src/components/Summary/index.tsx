@@ -1,5 +1,3 @@
-import { useContext } from "react";
-
 import { Content } from "./styles";
 
 import { SummaryItem } from "../SummaryItem/index";
