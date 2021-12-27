@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
+import { NewTransactionModal } from "./components/NewTransactionModal";
 
 import { GlobalStyle } from "./styles/global";
 
@@ -11,10 +12,19 @@ function App() {
     setIsNewTransactionModalOpen(true);
   }
 
+  function closeNewTransactionModal() {
+    setIsNewTransactionModalOpen(false);
+  }
+
   return (
     <>
       <GlobalStyle />
       <Header onOpenNewTransactionModal={openNewTransactionModal} />
+
+      <NewTransactionModal
+        isModalOpen={isNewTransactionModalOpen}
+        onCloseModal={closeNewTransactionModal}
+      />
     </>
   );
 }
