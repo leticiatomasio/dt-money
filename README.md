@@ -6,6 +6,6 @@ Aplicação web de controle de finanças com gerenciamento de entradas e saídas
 
 ## Rodando o projeto
 
-No diretório raiz do projeto, execute o comando `yarn start`. Abra [localhost:3000](http://localhost:3000) para visualizar a aplicação no browser. 
+No diretório raiz do projeto, execute o comando `yarn start`. A aplicação abrirá automaticamente para visualização no browser em determinada porta. 
 
 A página atualizará automaticamente caso sejam feitas alterações no código.
