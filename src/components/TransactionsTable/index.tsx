@@ -1,11 +1,10 @@
-import { useContext } from "react";
 import { Content } from "./styles";
 
 import { TransactionType } from "../../models/transaction.model";
-import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { useTransactions } from "../../hooks/useTransactions";
 
 export function TransactionsTable() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions } = useTransactions();
 
   function getTransactionType(transactionType: TransactionType) {
     switch (transactionType) {
