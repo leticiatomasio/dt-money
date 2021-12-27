@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
+import { Dashboard } from "./components/Dashboard";
 import { NewTransactionModal } from "./components/NewTransactionModal";
 
 import { GlobalStyle } from "./styles/global";
+import { TransactionsProvider } from "./contexts/TransactionsContext";
 
-function App() {
+export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
     useState(false);
 
@@ -17,16 +19,15 @@ function App() {
   }
 
   return (
-    <>
+    <TransactionsProvider>
       <GlobalStyle />
       <Header onOpenNewTransactionModal={openNewTransactionModal} />
+      <Dashboard />
 
       <NewTransactionModal
         isModalOpen={isNewTransactionModalOpen}
         onCloseModal={closeNewTransactionModal}
       />
-    </>
+    </TransactionsProvider>
   );
 }
-
-export default App;
