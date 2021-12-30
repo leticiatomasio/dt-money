@@ -2,7 +2,7 @@
 
 :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: :dollar: 
 
-Aplicação web de controle de finanças com gerenciamento de entradas e saídas projetada por Tiago Luchtenberg/Rocketseat. Projeto em React utilizando styled-components, CSS e Typescript e construído a partir da [trilha-curso de React Ignite do Rocketseat](https://www.rocketseat.com.br/ignite).
+Aplicação web de controle de finanças com gerenciamento de entradas e saídas projetada por Tiago Luchtenberg/Rocketseat. Projeto em React utilizando styled-components, CSS e Typescript e construído a partir da [trilha-curso de React, Ignite do Rocketseat](https://www.rocketseat.com.br/ignite).
 
 ## Rodando o projeto
 
